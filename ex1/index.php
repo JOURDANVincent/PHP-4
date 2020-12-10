@@ -17,7 +17,6 @@
     <?php
         
         // déclaration de la fonction
-        
         function returnTrue(){
             return true;
         }
