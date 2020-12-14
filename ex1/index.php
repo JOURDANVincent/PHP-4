@@ -1,3 +1,11 @@
+<?php  
+    // déclaration de la fonction
+    function returnTrue(){
+        return true;
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,16 +22,7 @@
     Faire une fonction qui retourne true.
     </p>
 
-    <?php
-        
-        // déclaration de la fonction
-        function returnTrue(){
-            return true;
-        }
-
-        echo returnTrue();
-        
-    ?>
+    <?php echo returnTrue(); ?>
 
 </body>
 

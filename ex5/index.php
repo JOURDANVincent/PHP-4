@@ -1,3 +1,17 @@
+<?php
+        
+    // déclaration de variable
+    $number = 37;
+    $string = 'ans';
+    
+    // déclaration de la fonction
+    
+    function concate($nn, $tt){
+        return "{$nn} {$tt}";
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,26 +25,12 @@
     <h1>Partie 4 - ex5</h1>
 
     <p>
-    Faire une fonction qui prend en paramètre un nombre et une chaine de caractères et qui renvoit la concaténation de ces deux paramètres.
+        Faire une fonction qui prend en paramètre un nombre et une chaine de caractères et qui renvoit 
+        la concaténation de ces deux paramètres.
     </p>
 
-    <?php
-        
-        // déclaration de variable
-        $number = 37;
-        $string = 'ans';
-        
-
-        // déclaration de la fonction
-        
-        function concate($nn, $tt){
-
-            return "{$nn} {$tt}";
-        }
-
-        echo concate($number, $string);
-        
-    ?>
+    <?= concate($number, $string); ?>
+    
 
 </body>
 

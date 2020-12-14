@@ -1,3 +1,33 @@
+<?php
+        
+    // Déclaration des variables
+    $age = rand(1, 130);
+    $gender = 'Femme';
+
+    // déclaration de la fonction 
+    function compare($a, $g) {
+
+        $response = '';
+
+        if ($g === 'Homme'){
+            if ($a >= 18){
+                $response = 'Vous êtes un homme et vous êtes majeur';
+            } else {
+                $response = 'Vous êtes un homme et vous êtes mineur';
+            }
+        } else {
+            if ($a >= 18){
+                $response = 'Vous êtes une femme et vous êtes majeure';
+            } else {
+                $response = 'Vous êtes une femme et vous êtes mineure';
+            }
+        }
+
+        return $response;
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,37 +55,10 @@
         Gérer tous les cas. 
     </p>
 
-    <?php
-        
-        // Déclaration des variables
-        $age = '32';
-        $gender = 'Femme';
+    <!-- affichage du résultat -->
+    <?= compare($age, $gender); ?>
 
-        // déclaration de la fonction 
-
-        function compare($a, $g) {
-
-            $response = null;
-
-            if ($g == 'Homme'){
-                if ($a >= 18){
-                    $response = 'Vous êtes un homme et vous êtes majeur';
-                } else {
-                    $response = 'Vous êtes un homme et vous êtes mineur';
-                }
-            } else {
-                if ($a >= 18){
-                    $response = 'Vous êtes une femme et vous êtes majeure';
-                } else {
-                    $response = 'Vous êtes une femme et vous êtes mineure';
-                }
-            }
-
-            return $response;
-        }
-
-        echo compare($age, $gender);
-    ?>
+    
 
 </body>
 

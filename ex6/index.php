@@ -1,3 +1,16 @@
+<?php
+    // Déclaration des variables
+    $lastName = 'JOURDAN';
+    $firstName = 'Vincent';
+    $age = 37;
+
+    // déclaration de la fonction 3 para
+    function sentence($lastName, $firstName, $age) {
+
+        return "Bonjour {$lastName} {$firstName}, tu as {$age} ans.";
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,21 +28,7 @@
         Bonjour + nom + prénom + , tu as + age + ans.
     </p>
 
-    <?php
-        
-        // Déclaration des variables
-        $lastName = 'JOURDAN';
-        $firstName = 'Vincent';
-        $age = 37;
-
-        // déclaration de la fonction 3 para
-        function sentence($lastName, $firstName, $age) {
-
-            return "Bonjour {$lastName} {$firstName}, tu as {$age} ans.";
-        }
-
-        echo sentence($lastName, $firstName, $age);
-    ?>
+    <?= sentence($lastName, $firstName, $age); ?>
 
 </body>
 

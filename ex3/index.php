@@ -1,3 +1,14 @@
+<?php
+    // déclaration de variable
+    $string1 = 'hello you';
+    $string2 = 'how ar u today ???';
+
+    // déclaration de la fonction
+    function showConcate($text1, $text2){
+        return "{$text1} !!! {$text2} ";
+    }        
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,20 +25,12 @@
     Faire une fonction qui prend en paramètre deux chaines de caractères et qui revoit la concaténation de ces deux chaines.
     </p>
 
-    <?php
-        
-        // déclaration de variable
-        $string1 = 'hello you !!!';
-        $string2 = 'how ar u today ???';
-
-        // déclaration de la fonction
-        
-        function returnTrue($text1, $text2){
-            return "{$text1}. {$text2} ";
-        }
-        echo returnTrue($string1,$string2);
-        
+    <?=  
+        // affichage dan sle DOM
+       showConcate($string1, $string2);
     ?>
+
+    
 
 </body>
 
